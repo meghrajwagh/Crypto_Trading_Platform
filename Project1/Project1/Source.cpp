@@ -1,12 +1,13 @@
 #include <iostream>
 
 // List of all the functions (Function declaration)
+// Comment
 void prtMainmenu();
 int inpMainmenu();
 void inpMainmenu_processing(int userInp);
-
+bool cond = true;
 int main() {
-	while (true) {
+	while (cond) {
 		prtMainmenu();
 		inpMainmenu_processing(inpMainmenu());
 	}
@@ -16,15 +17,16 @@ int main() {
 
 void prtMainmenu() {
 	//Making a Menu for the user
-	std::cout << "------------------Menu------------------" << std::endl;
-	std::cout << "1. Help" << std::endl;
-	std::cout << "2. Print exchange stats" << std::endl;
-	std::cout << "3. Make an Offer" << std::endl;
-	std::cout << "4. Make a bid" << std::endl;
-	std::cout << "5. Pring wallet" << std::endl;
-	std::cout << "6. Continue" << std::endl;
-	std::cout << "========================================" << std::endl;
-	std::cout << "Choose 1-6: ";
+	std::cout << "------------------Menu------------------\n";
+	std::cout << "1. Help\n";
+	std::cout << "2. Print exchange stats\n";
+	std::cout << "3. Make an Offer\n";
+	std::cout << "4. Make a bid\n";
+	std::cout << "5. Pring wallet\n";
+	std::cout << "6. Continue\n";
+	std::cout << "9. Exit\n";
+	std::cout << "========================================\n";
+	std::cout << "Choose 1-6 or 9: ";
 }
 
 int inpMainmenu() {
@@ -38,31 +40,36 @@ int inpMainmenu() {
 void inpMainmenu_processing(int userInp) {
 		switch(userInp) {
 		case 1:
-			std::cout << "Help-You must make lots of money\n" << std::endl;
+			std::cout << "\nHelp-You must make lots of money\n\n";
 			break;
 		
 		case 2:
-			std::cout << "Market looks aight\n" << std::endl;
+			std::cout << "\nMarket looks aight\n\n";
 			break;
 
 		case 3:
-			std::cout << "Make an offer\n" << std::endl;
+			std::cout << "\nMake an offer\n\n";
 			break;
 
 		case 4:
-			std::cout << "Make a bid\n" << std::endl;
+			std::cout << "\nMake a bid\n\n";
 			break;
 
 		case 5:
-			std::cout << "You have nothing atm\n" << std::endl;
+			std::cout << "\nYou have nothing atm\n\n";
 			break;
 
 		case 6:
-			std::cout << "Going to next time frame.\n" << std::endl;
+			std::cout << "\nGoing to next time frame.\n\n";
 			break;
 
+		case 9:
+			cond = false;
+			std::cout << "\nExiting the Program.\nThank You\n";
+			break;
+					
 		default:
-			std::cout << "Please enter a valid input. \n" << std::endl;
+			std::cout << "\nPlease enter a valid input. \n\n";
 			break;
 		}
 }
