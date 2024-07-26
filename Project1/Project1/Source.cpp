@@ -36,26 +36,34 @@ int inpMainmenu() {
 
 
 void inpMainmenu_processing(int userInp) {
-		if (userInp== 1) {
+		switch(userInp) {
+		case 1:
 			std::cout << "Help-You must make lots of money\n" << std::endl;
-		}
-		else if (userInp == 2) {
+			break;
+		
+		case 2:
 			std::cout << "Market looks aight\n" << std::endl;
-		}
-		else if (userInp == 3) {
+			break;
+
+		case 3:
 			std::cout << "Make an offer\n" << std::endl;
-		}
-		else if (userInp == 4) {
+			break;
+
+		case 4:
 			std::cout << "Make a bid\n" << std::endl;
-		}
-		else if (userInp == 5) {
+			break;
+
+		case 5:
 			std::cout << "You have nothing atm\n" << std::endl;
-		}
-		else if (userInp == 6) {
+			break;
+
+		case 6:
 			std::cout << "Going to next time frame.\n" << std::endl;
-		}
-		else {
+			break;
+
+		default:
 			std::cout << "Please enter a valid input. \n" << std::endl;
+			break;
 		}
 }
  
