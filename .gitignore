@@ -1,0 +1,118 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.userprefs
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+# Chutzpah Test files
+_Chutzpah*
+
+# Transient files
+*.csproj.user
+*.rsuser
+*.suo
+*.user
+*.cache
+*.log
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# TFS-specific files
+$tf/
+
+# Node.js Tools for Visual Studio
+.ntvs_analysis.dat
+
+# Non-English Visual Studio C++ standard libraries (optional)
+# see https://github.com/github/gitignore/pull/1255
+build/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Built application files
+*.exe
+*.dll
+*.lib
+*.app
+*.so
+*.dylib
+*.prl
+*.pdb
+*.pidb
+*.obj
+*.o
+*.idb
+*.class
+*.vscode/
+*.tlog
+*.lastbuildstate
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.opendb
+*.tlog
+*.lastbuildstate
+*.idb
+*.pdb
+*.ipdb
+*.iobj
+
+# C++ Builder
+*.cbp
+
+# Qt Creator
+*.pro.user
+*.qtc
+*.autosave
+
+# Sublime Text
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/
+
+# Mac
+*.DS_Store
