@@ -1,7 +1,6 @@
 #include <iostream>
 
 // List of all the functions (Function declaration)
-// Comment
 void prtMainmenu();
 int inpMainmenu();
 void inpMainmenu_processing(int userInp);
