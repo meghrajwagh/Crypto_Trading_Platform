@@ -4,7 +4,16 @@
 void prtMainmenu();
 int inpMainmenu();
 void inpMainmenu_processing(int userInp);
+void prtHelp();
+void prtExchangeStats();
+void makeOffer();
+void makeBid();
+void prtWallet();
+void gotoNextTimeFrame();
+
+// Global Variables
 bool cond = true;
+
 int main() {
 	while (cond) {
 		prtMainmenu();
@@ -35,31 +44,54 @@ int inpMainmenu() {
 	return userInp;
 }
 
+void prtHelp() {
+	std::cout << "\nHelp-You must make lots of money\n\n";
+}
+
+void prtExchangeStats() {
+	std::cout << "\nMarket looks aight\n\n";
+}
+
+void makeOffer() {
+	std::cout << "\nMake an offer\n\n";
+}
+
+void makeBid() {
+	std::cout << "\nMake a bid\n\n";
+}
+
+void prtWallet() {
+	std::cout << "\nYou have nothing atm\n\n";
+}
+
+void gotoNextTimeFrame() {
+	std::cout << "\nGoing to next time frame.\n\n";
+}
 
 void inpMainmenu_processing(int userInp) {
 		switch(userInp) {
 		case 1:
-			std::cout << "\nHelp-You must make lots of money\n\n";
+			prtHelp();
 			break;
 		
 		case 2:
-			std::cout << "\nMarket looks aight\n\n";
+			prtExchangeStats();
 			break;
 
 		case 3:
-			std::cout << "\nMake an offer\n\n";
+			makeOffer();
 			break;
 
 		case 4:
-			std::cout << "\nMake a bid\n\n";
+			makeBid();
 			break;
 
 		case 5:
-			std::cout << "\nYou have nothing atm\n\n";
+			prtWallet();
 			break;
 
 		case 6:
-			std::cout << "\nGoing to next time frame.\n\n";
+			gotoNextTimeFrame();
 			break;
 
 		case 9:
