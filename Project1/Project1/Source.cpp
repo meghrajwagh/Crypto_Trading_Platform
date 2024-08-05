@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 // List of all the functions (Function declaration)
 void prtMainmenu();
@@ -11,10 +12,16 @@ void makeBid();
 void prtWallet();
 void gotoNextTimeFrame();
 
+//Enum class
+enum class OrderDataType { bid, ask };
+
 // Global Variables
 bool cond = true;
 
 int main() {
+	std::string timeStamp{ "2020/03/17 17:01:24.884492" };
+	std::string product{ "ETH/BTC" };
+	std::string orderType{ "bid" };
 	while (cond) {
 		prtMainmenu();
 		inpMainmenu_processing(inpMainmenu());
